@@ -10,7 +10,9 @@ This repository contains [Examples](Examples) projects for [GroupDocs.Annotation
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
-## How to use the SDK?
+
+
+### How to use the SDK?
 The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [NuGet distribution](https://www.nuget.org/packages/GroupDocs.Annotation-Cloud/) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/display/annotationcloud/Available+SDKs).
 
 ### Prerequisites
