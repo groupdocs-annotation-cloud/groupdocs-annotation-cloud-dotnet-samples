@@ -11,9 +11,9 @@ namespace GroupDocs.Annotation.Cloud.Examples.CSharp
 			//// ***********************************************************
 
 			//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
-			Common.MyAppSid = "XXXXX-XXXXX-XXXXX-XXXXX";
-			Common.MyAppKey = "XXXXXXXXXX";
-			Common.MyStorage = "XXXXX";
+			Common.MyAppSid = "XXXXX-XXXXX-XXXXX-XXXXX-XXXXX";
+			Common.MyAppKey = "XXXXXXXXXXXXXXXXXXXX";
+			Common.MyStorage = "XXXXXXXXXX";
 
 			//// Uploading sample test files from local to storage under folder 'Annotationdocs'
 			//Common.UploadSampleTestFiles();
@@ -80,7 +80,7 @@ namespace GroupDocs.Annotation.Cloud.Examples.CSharp
 			//// ***********************************************************
 
 			// Get All Supported Formats
-			Get_All_Supported_Formats.Run();
+			//Get_All_Supported_Formats.Run();
 
 
 			//// ***********************************************************
@@ -114,20 +114,71 @@ namespace GroupDocs.Annotation.Cloud.Examples.CSharp
 			/////// ***** WORKING WITH ANNOTATIONS *****
 			//// ***********************************************************
 
-			// Post/Add annotations
-			//Add_Annotation.Run();
+			//// ***********************************************************
+			/////// ***** ADD ANNOTATIONS *****
+			//// ***********************************************************
+
+			//// Post/Add Area annotations
+			//Add_Area_Annotation.Run();
+
+			//// Post/Add Arrow annotations
+			//Add_Arrow_Annotation.Run();
+
+			//// Post/Add Distance annotations
+			//Add_Distance_Annotation.Run();
+
+			//// Post/Add Point annotations
+			//Add_Point_Annotation.Run();
+
+			//// Post/Add Polyline annotations
+			//Add_Polyline_Annotation.Run();
+
+			//// Post/Add Text annotations
+			//Add_Text_Annotation.Run();
+
+			//// Post/Add Text Field annotations
+			//Add_TextField_Annotation.Run();
+
+			//// Post/Add Text Replacement annotations
+			//Add_TextReplacement_Annotation.Run();
+
+			//// Post/Add Text Redaction annotations
+			//Add_TextRedaction_Annotation.Run();
+
+			//// Post/Add Text Strikeout annotations
+			//Add_TextStrikeout_Annotation.Run();
+
+			//// Post/Add Text Underline annotations
+			//Add_TextUnderline_Annotation.Run();
+
+			//// Post/Add Watermark annotations
+			//Add_Watermark_Annotation.Run();
+
+			//// Post/Add multiple annotations
+			//Add_Multiple_Annotations.Run();
+
+
+			//// ***********************************************************
+			/////// ***** GET ANNOTATIONS *****
+			//// ***********************************************************
 
 			//// Get document annotation from File
 			//Get_Annotation.Run();
-
-			////// Delete annotation from document
-			//Delete_Annotation.Run();
 
 			//// Get document with annotation result as Stream
 			//Get_Export_Document.Run();
 
 			//// Get document as PDF with annotation result as Stream
 			//Get_PDF.Run();
+
+
+			//// ***********************************************************
+			/////// ***** DELETE ANNOTATIONS *****
+			//// ***********************************************************
+
+			////// Delete annotation from document
+			//Delete_Annotation.Run();
+
 		}
 	}
 }

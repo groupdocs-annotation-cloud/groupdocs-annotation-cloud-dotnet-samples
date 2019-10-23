@@ -57,11 +57,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Annotation_CSharp_Common.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_TextField_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_Watermark_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_Text_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_TextUnderline_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_TextStrikeout_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_TextRedaction_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_TextReplacement_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_Polyline_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_Point_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_Distance_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_Arrow_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_Area_Annotation.cs" />
     <Compile Include="Working_With_Annotations\Annotation_CSharp_Delete_Annotation.cs" />
     <Compile Include="Working_With_Annotations\Annotation_CSharp_Get_PDF.cs" />
     <Compile Include="Working_With_Annotations\Annotation_CSharp_Get_Export_Document.cs" />
     <Compile Include="Working_With_Annotations\Annotation_CSharp_Get_Annotation.cs" />
-    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_Annotation.cs" />
+    <Compile Include="Working_With_Annotations\Annotation_CSharp_Add_Multiple_Annotations.cs" />
     <Compile Include="Working_With_Pages\Annotation_CSharp_Delete_Pages.cs" />
     <Compile Include="Working_With_Pages\Annotation_CSharp_Get_Pages.cs" />
     <Compile Include="Document_Information\Annotation_CSharp_DocumentInfo_File.cs" />
