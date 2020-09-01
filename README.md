@@ -13,7 +13,7 @@ This repository contains [Examples](Examples) projects for [GroupDocs.Annotation
 
 
 ### How to use the SDK?
-The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [NuGet distribution](https://www.nuget.org/packages/GroupDocs.Annotation-Cloud/) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/display/annotationcloud/Available+SDKs).
+The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [NuGet distribution](https://www.nuget.org/packages/GroupDocs.Annotation-Cloud/) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/annotation/available-sdks/).
 
 ### Prerequisites
 
@@ -44,11 +44,4 @@ From within Visual Studio:
 - [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/)
 
 
-## Resources
-
-+ **Website:** [www.GroupDocs.cloud](http://www.GroupDocs.cloud)
-+ **Product Home:** [GroupDocs.Annotation Cloud SDK for .NET](https://products.groupdocs.cloud/annotation/net)
-+ **Download:** [Download GroupDocs.Annotation Cloud SDK for .NET](https://www.nuget.org/packages/GroupDocs.Annotation-Cloud/)
-+ **Documentation:** [GroupDocs.Annotation Cloud SDK Documentation](https://docs.groupdocs.cloud/display/annotationcloud/Home)
-+ **Free Support:** [GroupDocs.Annotation Cloud SDK Free Support Forum](https://forum.groupdocs.cloud/c/annotation)
-+ **Blog:** [GroupDocs.Annotation Cloud SDK Blog](https://blog.groupdocs.cloud/category/annotation/)
+[Home](https://www.groupdocs.cloud/) | [Product Page](https://products.groupdocs.cloud/annotation/net) | [Docs](https://docs.groupdocs.cloud/annotation/) | [Demos](https://products.groupdocs.app/annotation/family) | [API Reference](https://apireference.groupdocs.cloud/annotation/) | [Examples](https://github.com/groupdocs-annotation-cloud/groupdocs-annotation-cloud-dotnet-samples) | [Blog](https://blog.groupdocs.cloud/category/annotation/) | [Free Support](https://forum.groupdocs.cloud/c/annotation) | [Free Trial](https://purchase.groupdocs.cloud/trial)
