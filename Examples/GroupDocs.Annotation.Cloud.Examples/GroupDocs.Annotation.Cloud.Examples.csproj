@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net461</TargetFramework>
+    <Authors>GroupDocs</Authors>
+    <Company>GroupDocs</Company>
+    <Description>Examples of using GroupDocs.Annotation.Cloud SDK
+</Description>
+    <Copyright>Aspose Pty Ltd</Copyright>
+    <PackageProjectUrl>https://products.groupdocs.cloud/annotation/net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/groupdocs-annotation-cloud/groupdocs-annotation-cloud-dotnet-samples</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GroupDocs.Annotation-Cloud" Version="20.10.0" />
+  </ItemGroup>
+
+</Project>
