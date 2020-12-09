@@ -7,13 +7,13 @@ namespace GroupDocs.Annotation.Cloud.Examples
 {
     internal class Constants
 	{
-		public static string MyAppSid;
-		public static string MyAppKey;
+		public static string MyClientId;
+		public static string MyClientSecret;
 		public static string MyStorage;
 
         public static Configuration GetConfig()
         {
-            var config = new Configuration(MyAppSid, MyAppKey);
+            var config = new Configuration(MyClientId, MyClientSecret);
             config.ApiBaseUrl = "https://api.groupdocs.cloud";
             return config;
         }

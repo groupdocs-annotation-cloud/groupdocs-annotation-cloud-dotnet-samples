@@ -10,41 +10,24 @@ This repository contains [Examples](Examples) projects for [GroupDocs.Annotation
   </a>
 </p>
 
-## How to use the SDK
-
-The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [NuGet distribution](https://www.nuget.org/packages/GroupDocs.Annotation-Cloud/) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/annotation/available-sdks/).
-
 ### Prerequisites
 
-To use GroupDocs.Annotation Cloud .NET SDK you need to register an account with [GroupDocs Cloud](https://groupdocs.cloud) and lookup/create App Key and SID at [Cloud Dashboard](https://dashboard.groupdocs.cloud/#/apps). There is free quota available. For more details, see [GroupDocs Cloud Pricing](https://purchase.groupdocs.cloud/pricing).
++ Visual Studio 2017 or Higher.
++ GroupDocs.Annotation Cloud SDK for .NET.
++ Get your ClientId and ClientSecret at [https://dashboard.groupdocs.cloud](https://dashboard.groupdocs.cloud) (free registration is required).
 
-### Installation
+## How to Run the Examples?
 
-#### Install GroupDocs.Annotation Cloud via NuGet
+The package contains C# examples. Follow the given steps to proceed with project build:
 
-From the command line:
++ Extract the downloaded project and open the solution file in Visual Studio
++ Right click on solution and press "Enable NuGet package Restore"
++ Edit RunExamples.cs and put ClientId and ClientSecret, obtained from https://dashboard.groupdocs.cloud there
++ Build and Run
 
-```shell
-nuget install GroupDocs.Annotation Cloud
-```
+For more details, visit  [Getting Started](https://docs.groupdocs.cloud/annotation/getting-started/).
 
-From Package Manager:
-
-```shell
-PM> Install-Package GroupDocs.Annotation Cloud
-```
-
-From within Visual Studio:
-
-1. Open the Solution Explorer.
-2. Right-click on a project within your solution.
-3. Click on *Manage NuGet Packages...*
-4. Click on the *Browse* tab and search for "GroupDocs.Annotation Cloud".
-5. Click on the GroupDocs.Annotation Cloud package, select the appropriate version in the right-tab and click *Install*.
-
-## Dependencies
-
-- .NET Framework 2.0 or later
-- [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/)
+## Licensing
+All GroupDocs.Annotation Cloud SDKs are licensed under [MIT License](LICENSE).
 
 [Home](https://www.groupdocs.cloud/) | [Product Page](https://products.groupdocs.cloud/annotation/net) | [Docs](https://docs.groupdocs.cloud/annotation/) | [Demos](https://products.groupdocs.app/annotation/family) | [API Reference](https://apireference.groupdocs.cloud/annotation/) | [Examples](https://github.com/groupdocs-annotation-cloud/groupdocs-annotation-cloud-dotnet-samples) | [Blog](https://blog.groupdocs.cloud/category/annotation/) | [Free Support](https://forum.groupdocs.cloud/c/annotation) | [Free Trial](https://purchase.groupdocs.cloud/trial)
