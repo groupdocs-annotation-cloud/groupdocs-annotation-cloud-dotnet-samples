@@ -7,29 +7,30 @@ using GroupDocs.Annotation.Cloud.Sdk.Model.Requests;
 
 namespace GroupDocs.Annotation.Cloud.Examples.AdvancedUsage
 {
-	// Add Text Strikeout annotations
-	internal class AddTextStrikeoutAnnotation
+	// Get document with annotations
+    internal class AddAnnotationDirect
 	{
 		public static void Run()
 		{
-			var apiInstance = new AnnotateApi(Constants.GetConfig());
+            var apiInstance = new AnnotateApi(Constants.GetConfig());
 
 			try
 			{
                 var fileInfo = new FileInfo { FilePath = "one-page.docx" };
 
-				AnnotationInfo[] annotations =
-				{
-					new AnnotationInfo
-					{
-                        Points = new List<Point>
-                        {
-                            new Point {X = 80, Y = 730}, new Point {X=240, Y=730}, new Point {X=80, Y=650}, new Point {X=240, Y=650}
-                        },
-						FontColor = 65535,
+                AnnotationInfo[] annotations =
+                {
+                    new AnnotationInfo
+                    {
+                        AnnotationPosition = new Point { X = 1, Y = 1 },
+                        Box = new Rectangle { X = 100, Y = 100, Width = 100, Height = 100 },
                         PageNumber = 0,
-                        Type = AnnotationInfo.TypeEnum.TextStrikeout,
-                        Text = "This is text strikeout annotation",
+                        BackgroundColor = 65535,
+                        PenColor = 65535,
+                        PenStyle = AnnotationInfo.PenStyleEnum.Solid,
+                        PenWidth = 3,
+                        Type = AnnotationInfo.TypeEnum.Area,
+                        Text = "This is area annotation",
                         CreatorName = "Anonym A.",
                         CreatedOn = DateTime.Now,
                         Replies = new List<AnnotationReplyInfo>
@@ -45,18 +46,17 @@ namespace GroupDocs.Annotation.Cloud.Examples.AdvancedUsage
                                 RepliedOn = DateTime.Now
                             }
                         }
-					},
-				};
+                    },
+                };
 
                 var options = new AnnotateOptions
                 {
                     FileInfo = fileInfo,
-                    Annotations = annotations.ToList(),
-                    OutputPath = "Output/output.docx"
+                    Annotations = annotations.ToList()
                 };
 
-                var link = apiInstance.Annotate(new AnnotateRequest(options));
-                Console.WriteLine("AddTextStrikeoutAnnotation: Text Strikeout Annotation added: " + link.Title);
+                var stream = apiInstance.AnnotateDirect(new AnnotateDirectRequest(options));
+                Console.WriteLine("AddAnnotationDirect: Area Annotation added. Stream size: " + stream.Length);
 			}
 			catch (Exception e)
 			{

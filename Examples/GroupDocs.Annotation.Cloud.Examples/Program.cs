@@ -13,7 +13,7 @@ namespace GroupDocs.Annotation.Cloud.Examples
             //// ***********************************************************
 
             //TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
-            Constants.MyClientId = "XXXX-XXXX-XXXX-XXXX";
+            Constants.MyClientId = "XXXXXXXXXXXXXXXX";
             Constants.MyClientSecret = "XXXXXXXXXXXXXXXX";
             Constants.MyStorage = "First Storage";
 
@@ -43,8 +43,8 @@ namespace GroupDocs.Annotation.Cloud.Examples
             //AddTextStrikeoutAnnotation.Run();
             //AddTextUnderlineAnnotation.Run();
             //AddWatermarkAnnotation.Run();
-            GetAnnotations.Run();
-            ExportDocumentWithAnnotations.Run();
+            ExtractAnnotations.Run();
+            AddAnnotationDirect.Run();
             DeleteAnnotations.Run();
             GetPages.Run();
             DeletePages.Run();

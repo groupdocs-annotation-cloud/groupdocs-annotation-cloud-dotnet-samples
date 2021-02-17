@@ -16,8 +16,8 @@ namespace GroupDocs.Annotation.Cloud.Examples.AdvancedUsage
 
 			try
 			{
-				var request = new PostAnnotationsRequest();
-				request.filePath = "ten-pages.pdf";
+                var fileInfo = new FileInfo { FilePath = "ten-pages.pdf" };
+
 				AnnotationInfo[] annotations =
 				{
                     new AnnotationInfo
@@ -77,9 +77,16 @@ namespace GroupDocs.Annotation.Cloud.Examples.AdvancedUsage
                         CreatorName = "Anonym A."
                     }
 				};
-				request.annotations = annotations.ToList();
-				apiInstance.PostAnnotations(request);
-				Console.WriteLine("AddMultipleAnnotations: Multiple Annotation added.");
+
+                var options = new AnnotateOptions
+                {
+                    FileInfo = fileInfo,
+                    Annotations = annotations.ToList(),
+                    OutputPath = "Output/output.pdf"
+                };
+
+                var link = apiInstance.Annotate(new AnnotateRequest(options));
+                Console.WriteLine("AddMultipleAnnotations: Multiple Annotation added: " + link.Title);
 			}
 			catch (Exception e)
 			{

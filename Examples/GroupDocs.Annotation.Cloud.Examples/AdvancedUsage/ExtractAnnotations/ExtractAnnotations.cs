@@ -1,11 +1,12 @@
 using System;
 using GroupDocs.Annotation.Cloud.Sdk.Api;
+using GroupDocs.Annotation.Cloud.Sdk.Model;
 using GroupDocs.Annotation.Cloud.Sdk.Model.Requests;
 
 namespace GroupDocs.Annotation.Cloud.Examples.AdvancedUsage
 {
-	// Get document with annotations
-    internal class ExportDocumentWithAnnotations
+	// Get document annotations
+    internal class ExtractAnnotations
 	{
 		public static void Run()
 		{
@@ -13,12 +14,12 @@ namespace GroupDocs.Annotation.Cloud.Examples.AdvancedUsage
 
 			try
 			{
-				// Set request.
-				var request = new GetExportRequest("one-page.docx");
+                var fileInfo = new FileInfo { FilePath = "input.docx" };
 
-				var response = apiInstance.GetExport(request);
-				Console.WriteLine("ExportDocumentWithAnnotations: Document Length: " + response.Length);
-            }
+				var response = apiInstance.Extract(new ExtractRequest(fileInfo));
+
+				Console.WriteLine("ExtractAnnotations: annotations count = " + response.Count);
+			}
 			catch (Exception e)
 			{
 				Console.WriteLine("Exception while calling AnnotateApi: " + e.Message);

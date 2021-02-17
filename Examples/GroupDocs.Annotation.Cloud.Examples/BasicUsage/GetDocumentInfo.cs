@@ -1,5 +1,6 @@
 using System;
 using GroupDocs.Annotation.Cloud.Sdk.Api;
+using GroupDocs.Annotation.Cloud.Sdk.Model;
 using GroupDocs.Annotation.Cloud.Sdk.Model.Requests;
 
 namespace GroupDocs.Annotation.Cloud.Examples.BasicUsage
@@ -11,7 +12,7 @@ namespace GroupDocs.Annotation.Cloud.Examples.BasicUsage
 		{
 			var apiInstance = new InfoApi(Constants.GetConfig());
 
-            var request = new GetInfoRequest("one-page.docx");
+            var request = new GetInfoRequest(new FileInfo { FilePath = "one-page.docx" });
 
 			var response = apiInstance.GetInfo(request);
 			Console.WriteLine("GetDocumentInfo: pages count = " + response.Pages.Count);

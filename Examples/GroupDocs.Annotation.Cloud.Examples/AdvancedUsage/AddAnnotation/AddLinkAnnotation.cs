@@ -16,8 +16,8 @@ namespace GroupDocs.Annotation.Cloud.Examples.AdvancedUsage
 
 			try
 			{
-				var request = new PostAnnotationsRequest();
-				request.filePath = "one-page.docx";
+                var fileInfo = new FileInfo { FilePath = "one-page.docx" };
+
 				AnnotationInfo[] annotations =
 				{
 					new AnnotationInfo
@@ -47,9 +47,16 @@ namespace GroupDocs.Annotation.Cloud.Examples.AdvancedUsage
                         }
 					},
 				};
-				request.annotations = annotations.ToList();
-				apiInstance.PostAnnotations(request);
-				Console.WriteLine("AddLinkAnnotation: link annotation added.");
+
+                var options = new AnnotateOptions
+                {
+                    FileInfo = fileInfo,
+                    Annotations = annotations.ToList(),
+                    OutputPath = "Output/output.docx"
+                };
+
+                var link = apiInstance.Annotate(new AnnotateRequest(options));
+                Console.WriteLine("AddLinkAnnotation: link Annotation added: " + link.Title);
 			}
 			catch (Exception e)
 			{

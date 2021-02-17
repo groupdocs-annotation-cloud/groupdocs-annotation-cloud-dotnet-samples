@@ -1,5 +1,6 @@
 using System;
 using GroupDocs.Annotation.Cloud.Sdk.Api;
+using GroupDocs.Annotation.Cloud.Sdk.Model;
 using GroupDocs.Annotation.Cloud.Sdk.Model.Requests;
 
 namespace GroupDocs.Annotation.Cloud.Examples.AdvancedUsage
@@ -13,7 +14,8 @@ namespace GroupDocs.Annotation.Cloud.Examples.AdvancedUsage
 
 			try
 			{
-                var request = new DeletePagesRequest("one-page.docx");
+                var fileInfo = new FileInfo { FilePath = "one-page.docx" };
+				var request = new DeletePagesRequest(fileInfo);
 
                 apiInstance.DeletePages(request);
 				Console.WriteLine("DeletePages: pages deleted.");
