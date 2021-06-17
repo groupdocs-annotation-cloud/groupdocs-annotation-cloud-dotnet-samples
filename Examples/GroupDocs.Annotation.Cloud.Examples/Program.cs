@@ -13,7 +13,7 @@ namespace GroupDocs.Annotation.Cloud.Examples
             //// ***********************************************************
 
             //TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
-            Constants.MyClientId = "XXXXXXXXXXXXXXXX";
+            Constants.MyClientId = "XXXX-XXXX-XXXX-XXXX";
             Constants.MyClientSecret = "XXXXXXXXXXXXXXXX";
             Constants.MyStorage = "First Storage";
 
@@ -27,22 +27,22 @@ namespace GroupDocs.Annotation.Cloud.Examples
 
             #region AdvancedUsage
             AddAreaAnnotation.Run();
-            //AddArrowAnnotation.Run();
-            //AddDistanceAnnotation.Run();
-            //AddEllipseAnnotation.Run();
-            //AddImageAnnotation.Run();
-            //AddMultipleAnnotations.Run();
-            //AddPointAnnotation.Run();
-            //AddPolylineAnnotation.Run();
-            //AddResourcesRedactionAnnotation.Run();
-            //AddTextFieldAnnotation.Run();
-            //AddTextHighlightAnnotation.Run();
-            //AddLinkAnnotation.Run();
-            //AddTextRedactionAnnotation.Run();
-            //AddTextReplacementAnnotation.Run();
-            //AddTextStrikeoutAnnotation.Run();
-            //AddTextUnderlineAnnotation.Run();
-            //AddWatermarkAnnotation.Run();
+            AddArrowAnnotation.Run();
+            AddDistanceAnnotation.Run();
+            AddEllipseAnnotation.Run();
+            AddImageAnnotation.Run();
+            AddMultipleAnnotations.Run();
+            AddPointAnnotation.Run();
+            AddPolylineAnnotation.Run();
+            AddResourcesRedactionAnnotation.Run();
+            AddTextFieldAnnotation.Run();
+            AddTextHighlightAnnotation.Run();
+            AddLinkAnnotation.Run();
+            AddTextRedactionAnnotation.Run();
+            AddTextReplacementAnnotation.Run();
+            AddTextStrikeoutAnnotation.Run();
+            AddTextUnderlineAnnotation.Run();
+            AddWatermarkAnnotation.Run();
             ExtractAnnotations.Run();
             AddAnnotationDirect.Run();
             DeleteAnnotations.Run();
