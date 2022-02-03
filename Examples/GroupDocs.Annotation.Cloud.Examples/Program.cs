@@ -35,6 +35,7 @@ namespace GroupDocs.Annotation.Cloud.Examples
             AddPointAnnotation.Run();
             AddPolylineAnnotation.Run();
             AddResourcesRedactionAnnotation.Run();
+            AddSquigglyAnnotation.Run();
             AddTextFieldAnnotation.Run();
             AddTextHighlightAnnotation.Run();
             AddLinkAnnotation.Run();
