@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GroupDocs.Annotation-Cloud" Version="23.12.0" />
+    <PackageReference Include="GroupDocs.Annotation-Cloud" Version="25.7.0" />
   </ItemGroup>
 
 </Project>
